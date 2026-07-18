@@ -7,14 +7,18 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+<div className="bg-[#0b0f19] min-h-screen">
+      <Header />
+
+<main className="w-full md:pl-64">
+  <Hero />
+  <About />
+  <Skills />
+  <Projects />
+  <Contact />
+   <Footer/>
+</main>
+     
     </div>
   )
 }
