@@ -1,20 +1,19 @@
 import { useState } from "react";
 
 function Header() {
-  // State ya kudhibiti kufunguka na kufungwa kwa menu kwenye simu
+ 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <>
-      {/* 1. TOP BAR YA SIMU (Inaonekana kwenye simu pekee, inajificha kwenye PC) */}
+     
       <div className="md:hidden fixed top-0 left-0 w-full h-16 bg-[#0b0f19]/90 backdrop-blur-md border-b border-gray-900 px-6 flex items-center justify-between z-50 text-white">
         <h1 className="text-xl font-extrabold tracking-tight">
           Sandis<span className="text-blue-500 ml-0.5">Tech</span>
         </h1>
-        
-        {/* Kitufe cha Hamburger chenye Animation */}
+       
         <button 
           onClick={toggleMenu}
           className="p-2 text-gray-400 hover:text-white focus:outline-none relative z-50"
@@ -28,7 +27,6 @@ function Header() {
         </button>
       </div>
 
-      {/* 2. GIZA LA NYUMA (Mtumiaji akifungua menu kwenye simu, akibonyeza huku inafunga) */}
       {isOpen && (
         <div 
           onClick={toggleMenu}
@@ -36,14 +34,13 @@ function Header() {
         />
       )}
 
-      {/* 3. SIDEBAR NAVIGATION (Inajirekebisha yenyewe - Simu vs Kompyuta) */}
       <header className={`
         fixed top-0 left-0 h-screen w-64 z-50 bg-[#0b0f19] border-r border-gray-900 text-white
         transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
         md:translate-x-0
       `}>
-        {/* CSS ya ndani kwa ajili ya kulainisha mveleko wa menu hover */}
+   
         <style>{`
           .nav-link-line {
             position: absolute;
@@ -68,14 +65,13 @@ function Header() {
 
         <nav className="h-full flex flex-col px-6 py-8 justify-between pt-24 md:pt-8">
           <div>
-            {/* Logo - Inafichwa kwenye simu kwa sababu ipo tayari kwenye top bar */}
+       
             <div className="mb-12 hidden md:block">
               <h1 className="text-2xl font-extrabold tracking-tight">
                 Sandis<span className="text-blue-500 ml-0.5">Tech</span>
               </h1>
             </div>
 
-            {/* Navigation Links */}
             <ul className="flex flex-col gap-6 text-gray-400 font-medium">
               {[
                 { name: "Home", href: "#Hero" },
@@ -87,13 +83,13 @@ function Header() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    onClick={() => setIsOpen(false)} // Inafunga menu mteja akibonyeza link kwenye simu
+                    onClick={() => setIsOpen(false)}
                     className="group relative flex items-center py-2 text-base tracking-wide"
                   >
-                    {/* Mstari wa bluu wa neon */}
+                   
                     <span className="nav-link-line" />
                     
-                    {/* Maandishi yanayosogea mbele */}
+                    
                     <span className="nav-text">
                       {link.name}
                     </span>
@@ -103,17 +99,16 @@ function Header() {
             </ul>
           </div>
 
-          {/* Sehemu ya Vitufe Viwili (Hire Me & Download CV) */}
           <div className="mt-auto flex flex-col gap-3">
-            {/* Kitufe cha Hire Me */}
+          
             <a href="#contact" onClick={() => setIsOpen(false)} className="w-full block">
               <button className="bg-blue-600 text-white px-5 py-3 text-sm font-semibold rounded-xl transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:scale-[1.02] w-full tracking-wide">
                 Hire Me
               </button>
             </a>
 
-            {/* Kitufe cha Download CV */}
-            <a href="/Masanja_CV.pdf" download className="w-full block">
+            
+            <a href="/paschal-cv.pdf" download className="w-full block">
               <button className="border border-gray-800 bg-gray-900/30 hover:bg-gray-900/60 text-gray-200 hover:text-white px-5 py-3 text-sm font-semibold rounded-xl transition-all duration-300 hover:border-gray-700 hover:scale-[1.02] w-full tracking-wide flex items-center justify-center gap-2">
                 <span>Download CV</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

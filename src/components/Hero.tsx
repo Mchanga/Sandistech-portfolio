@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id="Hero" className="min-h-screen bg-[#0b0f19] text-white flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 sm:px-12 lg:px-20 py-16 md:py-24 gap-12 w-full">
       
-      {/* Maandishi */}
+     
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
         <p className="text-sm md:text-lg text-blue-400 font-medium tracking-wide uppercase">
           Hello, I'm
@@ -37,7 +37,6 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Picha */}
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
