@@ -19,7 +19,11 @@
     "react-hook-form": "^7.81.0",
     "react-hot-toast": "^2.6.0",
     "react-icons": "^5.7.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.18.4",
+=======
+    "react-type-animation": "^3.2.0",
+>>>>>>> 1acf79cc7ac883e92194e6f1926ed1a9516193b7
     "tailwindcss": "^4.3.3",
     "zod": "^4.4.3"
   },
