@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" fill="#101010"/>
+  <rect x="1" y="1" width="46" height="46" fill="none" stroke="#c6a56b"/>
+  <text x="24" y="31" fill="#f5f1e8" font-family="Georgia,serif" font-size="19" text-anchor="middle" letter-spacing="-1">PM</text>
+</svg>
