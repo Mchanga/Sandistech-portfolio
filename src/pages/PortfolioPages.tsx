@@ -25,7 +25,7 @@ function PageIntro({ index, label, title, description }: { index: string; label:
 export function HomePage() {
   return (
     <>
-      <PageMeta title="Paschal Masanja — Software Developer in Tanzania" description="Paschal Masanja is a software developer in Tanzania building thoughtful web experiences and full-stack digital products." />
+      <PageMeta title="Sandistech" description="Sandistech builds thoughtful web experiences and full-stack digital products." />
       <Hero />
 
       <section className="bg-[#f5f1e8] text-[#191815]">

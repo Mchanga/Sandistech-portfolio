@@ -24,11 +24,10 @@ function Header() {
         <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
           <Link to="/" className="group flex min-w-0 items-center gap-3" aria-label="Sandistech, home" onClick={() => setIsOpen(false)}>
             <span className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#c6a56b]/70 font-serif text-sm text-[#c6a56b] transition group-hover:bg-[#c6a56b] group-hover:text-[#101010]">
-              PM
+              ST
             </span>
             <span className="min-w-0">
               <span className="block truncate text-sm font-semibold tracking-[0.02em] sm:text-base">Sandistech</span>
-              <span className="hidden text-[9px] font-medium uppercase tracking-[0.2em] text-white/45 sm:block">Software developer</span>
             </span>
           </Link>
 
